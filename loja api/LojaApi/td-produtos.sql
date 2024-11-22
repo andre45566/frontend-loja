@@ -1,0 +1,8 @@
+CREATE TABLE Produtos 
+(
+ Id INT PRIMARY KEY AUTO_INCREMENT,
+ Nome VARCHAR(255) NOT NULL,
+ Descricao TEXT,
+ Preco DECIMAL(10, 2) NOT NULL,
+ QuantidadeEstoque INT NOT NULL 
+);

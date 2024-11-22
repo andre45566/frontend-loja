@@ -1,0 +1,10 @@
+CREATE TABLE PedidoProdutos
+ (
+Id INT PRIMARY KEY AUTO_INCREMENT,
+PedidoId INT,
+ProdutoId INT,
+Quantidade INT NOT NULL,
+Preco DECIMAL(10, 2)NOT NULL,
+FOREIGN KEY (PedidoId) REFERENCES Pedidos(Id),
+FOREIGN KEY (ProdutoId)REFERENCES Produtos(Id) 
+ );
